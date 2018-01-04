@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:300,400,500,600');
+
+* {
+	box-sizing:border-box;
+}
+
+*::before, *::after {
+	position:absolute;
+	content:'';
+}
+
+html, body {
+	background-color: #B6DCD7;
+	width:100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Mukta Malar', '微軟正黑體', sans-serif;
+	color:#5C546B;
+}
+
+.container {
+	position:relative;
+	width:80%;
+	max-width: 1100px;
+	height:auto;
+	margin: 50px auto;
+	padding: 0;
+	background-color: #FCFCFC;
+	overflow:hidden;
+}
+
+.section {
+	padding-top: 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+	width:50%;
+	height:auto;
+	float: left;
+}
+
+.languages {
+	position: relative;
+	margin-top: 40px;
+	width:80px;
+	height:30px;
+	border:2px solid #B6DCD7;
+	float: right;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 28px;
+	border-radius: 20px;
+}
+.languages::after, .languages::before {
+	width:50%;
+	height:100%;
+	text-align: center;
+}
+.languages::after {
+	background-color: #B6DCD7;
+	border-radius: 20px 0 0 20px;
+	content: '中文';
+	color:#F7F7F7;
+	left:0;
+	transition: .2s;
+}
+.languages::before {
+	background-color: transparent;
+	content: 'EN';
+	color:#B6DCD7;
+	right:0;
+}
+.lang_toggle {transition: .2s;}
+.lang_toggle::after {
+	background-color:transparent;
+	color: #B6DCD7;
+}
+.lang_toggle::before {
+	border-radius: 0 20px 20px 0;
+	background-color:#B6DCD7;
+	color: #F7F7F7;
+}
+
+.name {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.career {
+	padding-top: 10px;
+	font-size: 16px;
+	color:var(--pink);
+	letter-spacing:.1em;
+}
+.content {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	position:relative;
+	width:100%;
+	color:var(--blue);
+	height:auto;
+}
+.content > p {
+	text-align: justify;
+	font-size: 13px;
+	letter-spacing:.1em;
+	line-height: 1.5em;
+}
+.title {
+	width:100%;
+	height:2px;
+	font-size: 18px;
+	letter-spacing: .5em;
+	font-weight: bold;
+	margin-bottom: 45px;
+	color:#E77C7C;
+}
+.title_toggle {
+	letter-spacing:.1em;
+	padding-right:.5em;
+}
+.title_toggle:nth-child(n)::after {
+	padding-right:.5em;
+}
+
+.chart {
+	position: relative;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	border:7px solid #F2DADA;
+	margin: 0 auto;
+	margin-bottom: 14px;
+}
+.chart::after {
+	width: 100%;
+	height:100%;
+	border:7px solid #DA9692;
+	border-radius: 50%;
+	transform: translateX(-50%) rotate(-45deg);
+	top:-7px;
+}
+.skill {
+	position:relative;
+	font-size: 13px;
+	letter-spacing:.1em;
+	line-height: 2em;
+}
+.skill_container {
+	width: 100%;
+	height:auto;
+	overflow:hidden;
+}
+.skill_container > .skill {
+	float: left;
+	width:33.33%;
+	text-align: center;
+	font-size: 12px;
+	transition: .3s;
+}
+.skill_container :first-child > .chart::after {
+	border-color: transparent #DA9692 #DA9692 transparent;
+}
+.skill_container :nth-child(2) > .chart::after {
+	border-color: transparent #DA9692 #DA9692 #DA9692;
+}
+.skill_container :last-child > .chart::after {
+	border-color: transparent #DA9692 #DA9692 transparent;
+}
+.bar {
+	position:relative;
+	float: right;
+	display: inline-block;
+	width:130px;
+	height:8px;
+	border-radius: 5px;
+	border:1px solid #DA9692;
+	transform: translateY(100%);
+	overflow:hidden;
+}
+.bar::after {
+	/*width:50%;*/
+	height:100%;
+	background: #DA9692;
+}
+.f2e_skills_container :nth-child(1) > .bar::after{
+	width:75%;
+}
+.f2e_skills_container :nth-child(2) > .bar::after{
+	width:80%;
+}
+.f2e_skills_container :nth-child(3) > .bar::after{
+	width:60%;
+}
+.f2e_skills_container :nth-child(4) > .bar::after{
+	width:60%;
+}
+.f2e_skills_container :nth-child(5) > .bar::after{
+	width:55%;
+}
+.f2e_skills_container :nth-child(6) > .bar::after{
+	width:70%;
+}
+.f2e_skills_container :nth-child(7) > .bar::after{
+	width:50%;
+}
+.f2e_skills_container :nth-child(8) > .bar::after{
+	width:35%;
+}
+.other_skills_container :nth-child(1) > .bar::after {
+	width:90%;
+}
+.other_skills_container :nth-child(2) > .bar::after {
+	width:86%;
+}
+.other_skills_container :nth-child(3) > .bar::after {
+	width:65%;
+}
+.other_skills_container :nth-child(4) > .bar::after {
+	width:80%;
+}
+@media (max-width: 1100px) {
+	.section {
+		float: none;
+		width:100%;
+	}
+	.block_line {
+		display: none;
+	}
+	.section_two {
+		padding-top: 0;
+	}
+}
+@media (max-width: 500px) {
+	.container {
+		margin-top: 30px;
+		width: 90%;
+	}
+	.section {
+		padding-top: 60px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.section_two {
+		padding-top: 0;
+	}
+}
