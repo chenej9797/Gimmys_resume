@@ -1,7 +1,15 @@
 if (!window.I18N) window.I18N = {};
 window.I18N['en'] = {
-	name: 'CHEN E J',
-	career: 'Front  End  Developer',
+	name: 'CHEN, CHING - MIN',
+	address: 'May-he Street, No.112, Taichung City, Taiwan',
+	career: 'International Marketing Specialist',
+	title: {
+		title_experience:'Experience', 
+		title_achievement:'Achievement', 
+		title_education:'Education',
+		title_programs:'Programs',
+		title_interest:'Interest'
+	},
 	about_me: `2017 畢業於國立臺北藝術大學新媒體藝術學系<br><br>
 					大學時期作品主要為動力機械裝置、手繪實驗動畫以及影像裝置。利用Arduino和機械結構、影像動畫，製作多媒材結合的作品。<br><br>
 					目前自學於前端網頁工程、設計的技術。`,

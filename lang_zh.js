@@ -1,7 +1,14 @@
 if (!window.I18N) window.I18N = {};
 window.I18N['zh'] = {
-	name: '陳 怡 潔',
+	name: '陳 靖 旻',
+	address: '台灣台中市南區美和街112號',
 	career: '前端工程師',
+	title: {
+		title_experience:'工作經驗', 
+		title_achievement:'工作成就', 
+		title_education:'學歷',
+		title_programs:'專案經驗',
+		title_interest:'興趣/專長'},
 	about_me: `2017 畢業於國立臺北藝術大學新媒體藝術學系<br><br>
 					大學時期作品主要為動力機械裝置、手繪實驗動畫以及影像裝置。利用Arduino和機械結構、影像動畫，製作多媒材結合的作品。<br><br>
 					目前自學於前端網頁工程、設計的技術。`,
