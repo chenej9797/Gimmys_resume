@@ -28,6 +28,14 @@ window.I18N['en'] = {
 					「A\P」/Taipei National University of the Arts, Taipei<br>
 					「Forced Producing」/Taipei National University of the Arts, Taipei<br><br>
 					<span class="year">2013</span><br>
-					​「Chronically Poisoned」/Taipei National University of the Arts, Taipei`
+					​「Chronically Poisoned」/Taipei National University of the Arts, Taipei`,
+	autobiography: `<p>My name is Chen Ching-Min; I am currently employed as SEA Marketing Specialist for MSI - Micro-star International CO., Ltd. I believe that the skills and experiences I have gained at this position make me a suitable candidate for the job.</p>
+					<p>As SEA Marketing Specialist, I have developed strong marketing skills. For example, one of my main duties is to manage marketing strategy of Thailand, Cambodia, and Laos. I lead my Thailand marketing team to achieve the target. And, I operate the marketing of Cambodia and Laos only by myself. The gaming notebook sold out amount grown nearly 50% when I take care of Thailand; grown double amount in Cambodia.</p>
+					<p>This duty also requires meticulous organizing and communication skills, and an ability to convey different content to different department clearly. Another important skill is the simplification, a tip to deliver message efficiently. I have gained extensive experience in program implementation. There were two programs that I run, one is a cross-industry marketing program, and the other one is a limited edition product launch program.</p>
+					<p>I am a positive and independent optimist. I am always eager to learn more about the marketing, reading up on these topics on my own time to become more knowledgeable. I exercise to stay healthy, gaming for relaxing. I would love to bring this passion to the new company.</p>
+					<p>Before I worked for MSI, I was a brand development manager for a textile company. We developed a new brand with marketing strategy and process schedule. We also designed and executed market survey. I also managed a new product development project, apply for government support and got the 2,000,000 TWD funding.</p>
+					<p>In the future, I would like to contribute my knowledge and strength, also, get the reward for my effort. I would like a position where I can have my independence and I would like to lead a team to reach our goal. I have strong marketing experience,　great communication skills, and I believe my personality and work attitude can be a benefit to your company. </p>
+					<p>I am confident that my experience in the marketing skills qualifies me for consideration. Looking forward to meeting with you and discuss my qualifications in more details.</p>`
+
 
 }
