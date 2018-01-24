@@ -9,6 +9,12 @@ const Title_education = document.querySelector('.title_education');
 const Title_programs = document.querySelector('.title_programs');
 const Title_interest = document.querySelector('.title_interest');
 const Autobiography = document.querySelector('.autobiography');
+const Experience_title = document.querySelectorAll('.experience_item .item_title');
+const Experience_content = document.querySelectorAll('.experience_item p');
+const Achievement = document.querySelectorAll('.achievement_item_title');
+const Education = document.querySelector('.education');
+const Program = document.querySelectorAll('.program_item');
+const Interest = document.querySelectorAll('.interest_item');
 
 const btn_autobiography = document.querySelector('.other_link_autobiography');
 const btn_back = document.querySelector('.back_btn');
@@ -33,6 +39,24 @@ function lang_toggle(lang) {
 		Title_programs.innerHTML=window.I18N.en.title.title_programs;
 		Title_interest.innerHTML=window.I18N.en.title.title_interest;
 		Autobiography.innerHTML=window.I18N.en.autobiography;
+		for (let i=0;i<Experience_title.length; i++) {
+			Experience_title[i].innerHTML=window.I18N.en.experience[i].title;
+			Experience_content[i].innerHTML=window.I18N.en.experience[i].content;
+		}
+		for (let i=0; i<Achievement.length; i++) {
+			Achievement[i].innerHTML=window.I18N.en.achievement[i];
+			Achievement[i].classList.remove('zh_text');
+		}
+		for (let i=0; i<Program.length; i++) {
+			Program[i].innerHTML=window.I18N.en.program[i];
+			Program[i].classList.remove('zh_text');
+		}
+		for (let i=0; i<Interest.length; i++) {
+			Interest[i].innerHTML=window.I18N.en.interest[i];
+			Interest[i].classList.remove('zh_text');
+		}
+		Education.innerHTML=window.I18N.en.education;
+		Education.classList.remove('zh_text');
 		en_height = Autobiography.getBoundingClientRect().height;
 		if (btn_autobiography_toggle) {
 			document.querySelector('.autobiography_active').style.height = (en_height+ 100)+'px';
@@ -49,12 +73,29 @@ function lang_toggle(lang) {
 		Title_programs.innerHTML=window.I18N.zh.title.title_programs;
 		Title_interest.innerHTML=window.I18N.zh.title.title_interest;
 		Autobiography.innerHTML=window.I18N.zh.autobiography;
+		for (let i=0;i<Experience_title.length; i++) {
+			Experience_title[i].innerHTML=window.I18N.zh.experience[i].title;
+			Experience_content[i].innerHTML=window.I18N.zh.experience[i].content;
+		}
+		for (let i=0; i<Achievement.length; i++) {
+			Achievement[i].innerHTML=window.I18N.zh.achievement[i];
+			Achievement[i].classList.add('zh_text');
+		}
+		for (let i=0; i<Program.length; i++) {
+			Program[i].innerHTML=window.I18N.zh.program[i];
+			Program[i].classList.add('zh_text');
+		}
+		for (let i=0; i<Interest.length; i++) {
+			Interest[i].innerHTML=window.I18N.zh.interest[i];
+			Interest[i].classList.add('zh_text');
+		}
+		Education.innerHTML=window.I18N.zh.education;
+		Education.classList.add('zh_text');
 		zh_height = Autobiography.getBoundingClientRect().height;
 		if (btn_autobiography_toggle) {
 			document.querySelector('.autobiography_active').style.height = (zh_height+100)+'px';
 		}
 	}
-	console.log('en:'+en_height, 'zh:'+zh_height);
 }
 
 function autobiography_click() {
@@ -87,12 +128,6 @@ function autobiography_click_active(e) {
 	}
 }
 
-function back_click_active(e) {
-	console.log(e.propertyName);
-	// if (e.propertyName.includes('font-size')) {
-	// 	contents.forEach(content => content.classList.remove('content_none'));
-	// }
-}
 lang_btn.addEventListener('click', lang_toggle);
 btn_autobiography.addEventListener('click', autobiography_click);
 // btn_autobiography.addEventListener('transitionend', autobiography_click_active);
